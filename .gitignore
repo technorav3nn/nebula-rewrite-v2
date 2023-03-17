@@ -1,7 +1,7 @@
 # roblox-ts related
 include
 node_modules
-projects/*/out
+packages/*/out
 
 # macOS metadata (unnecessary)
 .DS_Store
