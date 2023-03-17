@@ -1,0 +1,53 @@
+# workflow
+
+name: Release
+
+on:
+    workflow_dispatch:
+    release:
+        types: [published, prereleased]
+
+permissions:
+    contents: write
+    packages: write
+
+jobs:
+    publish-release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: GitHub Checkout
+              uses: actions/checkout@v3
+
+            - name: Setup PNPM
+              uses: pnpm/action-setup@v2.2.4
+              with:
+                  version: 7.25.1
+                  run_install: true
+
+            - name: Setup Aftman
+              uses: ok-nick/setup-aftman@v0.3.0
+
+            - name: Install Rojo & Remodel
+              run: aftman install
+
+            - name: Install roblox-ts
+              run: pnpm add -g roblox-ts
+
+            - name: Build & Compile
+              run: |
+                  pnpm run build
+
+            - name: Bundle Luau
+              run: |
+                  pnpm run bundle:prod
+                  pnpm run bundle:dev
+
+            - name: Upload Release Assets
+              uses: xresloader/upload-to-github-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  file: "dist/main.lua;dist/main-dev.lua"
+                  tags: true
+                  draft: true

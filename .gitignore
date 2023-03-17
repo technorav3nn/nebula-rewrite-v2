@@ -1,3 +1,12 @@
-/include
-/node_modules
-/projects/*/out
+# roblox-ts related
+include
+node_modules
+projects/*/out
+
+# macOS metadata (unnecessary)
+.DS_Store
+
+# flamework metadata (you're gonna build anyway!
+flamework.build
+
+# yarn
