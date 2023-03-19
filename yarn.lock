@@ -90,6 +90,10 @@
   resolved "https://registry.yarnpkg.com/@rbxts/compiler-types/-/compiler-types-2.1.0-types.1.tgz#60eb32109fc2299826fd5d1e8f4e7cfc08d9a5ae"
   integrity sha512-+ztwutzuNivWsgsERiC7n5il4C5gfJUuGJUmXYRq8FwY4ye3aupRi9RocmyAHq6255sO7z+RM61AVbqx3llsLQ==
 
+"@rbxts/hax@github:richie0866/rbxts-hax":
+  version "1.1.0"
+  resolved "https://codeload.github.com/richie0866/rbxts-hax/tar.gz/deccd39f06cfcb53db0a89050bc2f421b5346603"
+
 "@rbxts/maid@^1.0.0-ts.1":
   version "1.0.0-ts.1"
   resolved "https://registry.yarnpkg.com/@rbxts/maid/-/maid-1.0.0-ts.1.tgz#3db8687be6293cb66e8ba7f53994781e8ef679af"
@@ -99,6 +103,21 @@
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@rbxts/object-utils/-/object-utils-1.0.4.tgz#c53d80f89e75c401365446be63fa1396bc2cffe7"
   integrity sha512-dLLhf022ipV+9i910sOE7kl9losKHoon0WgeerHqVMQA5EYsLUsVT2AxhJuhk8MiDn5oJ2GiFofE/LadY9TpJQ==
+
+"@rbxts/reflex@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@rbxts/reflex/-/reflex-1.1.0.tgz#c393dcef607a27ae4862274a948e236f07f553f6"
+  integrity sha512-TO1IE3T9xBirf1lsE1NIljXiNFCRf3srIRd8UKAm5t4SR3DWvEA/lQoAUUw8TnjXJH6dtk8ZZSInYNf4fsN52g==
+
+"@rbxts/roact-hooked@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@rbxts/roact-hooked/-/roact-hooked-2.3.3.tgz#86cbd9c1fa152ea97cc2131b614424a630de88d5"
+  integrity sha512-qj/Fx2Q1hOae9giRqxdDWXPi2k92aIADck7Lj1ou5KGNp/oUT8x3FD8yt6lpLq44MveWV3cY/W/f0X4NLltMEA==
+
+"@rbxts/roact@^1.4.4-ts.0":
+  version "1.4.4-ts.0"
+  resolved "https://registry.yarnpkg.com/@rbxts/roact/-/roact-1.4.4-ts.0.tgz#7f297bec03dbea9473bd2d82b148d3ae6e4f6c00"
+  integrity sha512-gn9mBoGG/Clzgv2kyOvLNVd9dh5t6z+jukC3ITv2HnfPqvf/sMbz/VMaBoiB7t5umuiIe0LjW0ctZrkrS+uTOA==
 
 "@rbxts/services@^1.1.4":
   version "1.5.1"
@@ -114,6 +133,11 @@
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@rbxts/t/-/t-2.2.1.tgz#19b8be095a503bc2835bd70bf8cd45cb9d958ca7"
   integrity sha512-MoFLHRQdm1tpAviAVxgkQj/ktxtnGBund2HXQj5xRqgYUWuC3kYuLkctuxXiJHUd1o1JzfU/HvVHtZfpqp61tg==
+
+"@rbxts/task-event-emitter@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@rbxts/task-event-emitter/-/task-event-emitter-1.2.1.tgz#6ffbff258d77ef1e909ee32b9e2328c901bb7162"
+  integrity sha512-pjPk9y9+NZIpvO+jcljlKENfjJSwRyfurUx9oIrP2JK7co/PMlsEPj5hEyfCAW+1pDO1RX13b0hv3gPxNBdvxw==
 
 "@rbxts/types@^1.0.658":
   version "1.0.666"
