@@ -1,4 +1,4 @@
-import Library from "shared/structures/ui-library/ui-library";
+import { Library } from "shared/index";
 
 const window = Library.CreateWindow({ Title: "nebula - life sentence", AutoShow: true });
 

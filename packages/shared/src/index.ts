@@ -1,5 +1,5 @@
 import Library from "./structures/ui-library/ui-library";
-export const UILibrary = Library;
+export { Library };
 
 export * from "./structures/Teleporter";
 
