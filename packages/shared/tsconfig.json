@@ -3,20 +3,27 @@
 		// required
 		"allowSyntheticDefaultImports": true,
 		"downlevelIteration": true,
+
 		"jsx": "react",
 		"jsxFactory": "Roact.createElement",
 		"jsxFragmentFactory": "Roact.createFragment",
+
 		"module": "commonjs",
 		"moduleResolution": "Node",
 		"noLib": true,
 		"resolveJsonModule": true,
-		"experimentalDecorators": true,
-		"forceConsistentCasingInFileNames": true,
 		"moduleDetection": "force",
+
+		"experimentalDecorators": true,
+
+		"forceConsistentCasingInFileNames": true,
 		"strict": true,
+
 		"target": "ESNext",
+
 		"typeRoots": ["../../node_modules/@rbxts", "../../node_modules/@flamework"],
 		"plugins": [{ "transform": "rbxts-transformer-flamework" }],
+
 		// required, configurable
 		"rootDir": "src",
 		"outDir": "out"

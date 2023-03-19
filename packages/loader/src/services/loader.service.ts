@@ -2,7 +2,8 @@ import { Service } from "@flamework/core";
 
 const PLACE_ID_MAPPINGS = {
 	[10427037408]: "life-sentence",
-	[-2]: "shared",
+	[8737602449]: "pls-donate",
+	[-1]: "debug",
 } as const;
 
 type PackagesList = (typeof PLACE_ID_MAPPINGS)[keyof typeof PLACE_ID_MAPPINGS];
@@ -17,10 +18,10 @@ export class LoaderService {
 	 */
 	public importGamePackage(packageName: PackagesList) {
 		switch (packageName) {
-			case "life-sentence": {
-				return import("life-sentence/index");
+			case "pls-donate": {
+				return import("pls-donate/index");
 			}
-			case "shared": {
+			case "debug": {
 				return import("shared/index");
 			}
 		}

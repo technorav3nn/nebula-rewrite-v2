@@ -1,5 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+export interface Button {}
+
+export interface Input {}
+
+export interface Label {
+	SetText(text: string): void;
+}
+
 export declare interface Section {
 	AddButton(options: {
 		Text: string;
@@ -7,6 +15,17 @@ export declare interface Section {
 		Tooltip?: string;
 		DoubleClick?: boolean;
 	}): void;
+	AddInput(
+		flag: string,
+		options: {
+			Default?: string;
+			Tooltip?: string;
+			Numeric?: boolean;
+			Finished?: boolean;
+			Callback: Callback;
+		},
+	): void;
+	AddLabel(text: string, wrapText?: boolean): Label;
 }
 
 export declare interface Tabbox {

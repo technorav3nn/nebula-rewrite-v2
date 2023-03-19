@@ -17,16 +17,16 @@
 		"target": "ESNext",
 		"typeRoots": ["../../node_modules/@rbxts", "../../node_modules/@flamework"],
 		// required, configurable
-		"rootDirs": ["src", "../shared/src", "../life-sentence/src"],
+		"rootDirs": ["src", "../shared/src", "../pls-donate/src"],
 		"outDir": "out",
 		// optional, non-configurable
 		"baseUrl": "src",
 		"paths": {
 			"shared/*": ["../../shared/src/*"],
 			"miners-haven/*": ["../../miners-haven/src/*"],
-			"life-sentence/*": ["../../life-sentence/src/*"]
+			"pls-donate/*": ["../../pls-donate/src/*"]
 		},
 		"plugins": [{ "transform": "rbxts-transformer-flamework" }]
 	},
-	"include": ["**/*", "../shared/**/*", "../life-sentence/**/*"]
+	"include": ["**/*", "../shared/**/*", "../pls-donate/**/*"]
 }
